@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+input {
+    font-size: 16px;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+/* CSS untuk bagian dalam container */
+.div-2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* CSS untuk pengaturan baris */
+.div-3 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* CSS untuk kolom gambar */
+.column {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* CSS untuk kolom informasi */
+.column-2 {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+/* CSS untuk informasi produk */
+.div-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* CSS untuk judul produk */
+.div-5 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* CSS untuk harga produk */
+.div-6 {
+    font-size: 20px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+/* CSS untuk jumlah produk */
+.div-7 {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* CSS untuk tombol keranjang */
+.div-8 {
+    display: flex;
+    align-items: center;
+}
+
+.img-2 {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.div-9 {
+    font-size: 16px;
+    color: white;
+    background-color: #a165cc;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.div-9:hover {
+    background-color: #7d4aa9;
+}
+
+/* Column */
+.div-7 {
+    font-family: Baloo Tamma 2, sans-serif;
+    border-radius: 7px;
+    border-color: rgba(0, 0, 0, 1);
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 40px;
+    width: 197px;
+    max-width: 100%;
+    align-items: start;
+    white-space: nowrap;
+    justify-content: center;
+    padding: 25px 19px;
+  }
+  @media (max-width: 991px) {
+    .div {
+      padding-right: 20px;
+      white-space: initial;
+    }
+  }
