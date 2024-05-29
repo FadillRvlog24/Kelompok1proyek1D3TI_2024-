@@ -4,7 +4,7 @@
 * Author URI: https://untree.co/
 * License: https://creativecommons.org/licenses/by/3.0/
 */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+@import url("https://h4onts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 body {
   overflow-x: hidden;
   position: relative; }
@@ -17,14 +17,28 @@ body {
   font-size: 14px;
   background-color: #eff2f1; }
 
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+  
 a {
   text-decoration: none;
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease;
-  color: #ffffff;
+  color: ;
   text-decoration: underline; }
-
+  a:hover {
+    color:white;
+    text-decoration: none; }
   a.more {
     font-weight: 600; }
 
@@ -94,7 +108,7 @@ a {
         margin-right: 20px; }
 
 .hero {
-  background: #ffffff;
+  background: white;
   padding: calc(4rem - 30px) 0 0rem 0; }
   @media (min-width: 768px) {
     .hero {
@@ -109,7 +123,8 @@ a {
       .hero .intro-excerpt {
         max-width: 450px; } }
   .hero h1 {
-    font-weight: 700;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
     color: black;
     margin-bottom: 30px; }
     @media (min-width: 1400px) {
@@ -158,10 +173,14 @@ a {
 
 .btn {
   font-weight: 600;
+  display: inline-block;
   padding: 12px 30px;
   border-radius: 30px;
   background: #AE71D8;
-  border-color: #ffffff; }
+  border-color: #ffffff; 
+  position: left;
+  
+}
   .btn:hover {
     color: #AE71D8;
     background: #ffffff;
@@ -174,14 +193,14 @@ a {
     background: #AE71D8;
     border-color: #AE71D8; }
     .btn.btn-primary:hover {
-      background: #a500e7;
+      background: #ffffff;
       border-color: #AE71D8; }
   .btn.btn-secondary {
-    color: #2f2f2f;
+    color: #ffffff;
     background: #AE71D8;
     border-color: white; }
     .btn.btn-secondary:hover {
-      background: #ffffff;
+      background: #EE82EE;
       border-color: #AE71D8; }
   .btn.btn-white-outline {
     background: white;
@@ -313,7 +332,7 @@ a {
   .we-help-section .imgs-grid {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[];
+    -ms-grid-columns: (1fr)(27);
     grid-template-columns: repeat(27, 1fr);
     position: relative; }
     .we-help-section .imgs-grid:before {
@@ -459,7 +478,7 @@ a {
       -o-transition: .3s all ease;
       transition: .3s all ease; }
       .testimonial-slider-wrap #testimonial-nav > span:hover {
-        background: #AE71D8;
+        background: #3b5d50;
         color: #ffffff; }
     .testimonial-slider-wrap #testimonial-nav .prev {
       left: -10px; }
