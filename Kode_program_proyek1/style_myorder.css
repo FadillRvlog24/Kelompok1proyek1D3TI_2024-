@@ -1,0 +1,180 @@
+/* CSS for the order summary page */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid {
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.card {
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 15px;
+    text-align: left;
+}
+
+.table-borderless th, .table-borderless td {
+    border: none;
+}
+
+.table tfoot tr {
+    font-weight: bold;
+}
+
+.table .text-end {
+    text-align: right;
+}
+
+.table .text-danger {
+    color: #dc3545;
+}
+
+.btn-link {
+    color: #333;
+    text-decoration: none;
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-link:hover {
+    text-decoration: underline;
+}
+
+.dropdown-menu {
+    min-width: 150px;
+}
+
+.text-muted {
+    color: #6c757d;
+}
+
+.text-reset {
+    color: inherit;
+    text-decoration: none;
+}
+
+.text-reset:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.address {
+    margin-bottom: 20px;
+}
+
+.address strong {
+    display: block;
+    font-size: 16px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.35em 0.65em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+}
+
+.badge-info {
+    color: #fff;
+    background-color: #17a2b8;
+}
+
+.badge-success {
+    color: #fff;
+    background-color: #28a745;
+}
+
+.rounded-pill {
+    border-radius: 50rem;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #e9ecef;
+    margin: 20px 0;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.text-decoration-underline {
+    text-decoration: underline;
+}
+
+.text-end {
+    text-align: right;
+}
+
+.text-danger {
+    color: #dc3545;
+}
+
+
+.card {
+    box-shadow: ;
+}
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border-radius: 1rem;
+}
+.text-reset {
+    --bs-text-opacity: 1;
+    color: inherit!important;
+}
+a {
+    color: #5465ff;
+    text-decoration: none;
+}
+
