@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+</head>
+<body>
+    <h1>User Profile</h1>
+    <form action="display_profile.php" method="post">
+    <div id="profile">
+        <p id="first_name">First Name: </p>
+        <p id="last_name">Last Name: </p>
+        <p id="email">Email: </p>
+    </div>
+    <button id="updateButton" href="profile.php">Update Profile</button>
+
+    <script>
+        // Mengambil data profil pengguna dari server
+        fetch('display_profile.php')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('first_name').textContent += data.first_name;
+                document.getElementById('last_name').textContent += data.last_name;
+                document.getElementById('email').textContent += data.email;
+                document.getElementById('address').textContent += data.address;
+            })
+            .catch(error => console.error('Error fetching profile:', error));
+
+        // Menangani klik tombol "Update Profile"
+        document.getElementById('updateButton').addEventListener('click', function() {
+            window.location.href = 'update_profile.php';
+        });
+    </script>
+</body>
+</html>
