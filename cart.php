@@ -18,6 +18,8 @@ $sql = "SELECT * FROM cart";
 $result = $conn->query($sql);
 ?>
 
+
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -28,7 +30,6 @@ $result = $conn->query($sql);
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href="css/tiny-slider.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
-    <link rel="stylesheet" href="menu3.css">
     <title>Kedai kitta</title>
 </head>
 <body>
@@ -42,7 +43,7 @@ $result = $conn->query($sql);
             </button>
             <div class="collapse navbar-collapse" id="navbarsFurni">
                 <ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
-                    <li class="nav-link" href="cart.php">Beranda</a>
+                    <li class="nav-link" href="beranda.html">Beranda</a>
                   </li>
                     <li><a class="nav-link" href="menu.html">Menu</a></li>
                     <li><a class="nav-link" href="about.html">Tentang kami</a></li>
@@ -97,40 +98,23 @@ $result = $conn->query($sql);
         </table>
     </div>
     <br>
-    
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="row mb-5">
+
                    
-                    </div>
-                  </div>
-                  <div class="row">
-                      <div class="col-md-4">
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 pl-5">
                   <div class="row justify-content-end">
                     <div class="col-md-7">
                       <div class="row">
                         <div class="col-md-12 text-right border-bottom mb-5">
-                          <h3 class="text-black h4 text-uppercase">Total</h3>
                         </div>
                       </div>
                       <div class="row mb-3">
-                        <div class="col-md-6">
-                          <span class="text-black">Total</span>
-                        </div>
-                        <div class="col-md-6 text-right">
-                          <strong class="text-black">Rp.</strong>
-                        </div>
-                      </div>
+                        
                       <div class="row mb-5">
                       </div>
         
                       <div class="row">
-                        <div class="col-md-12">
-                          <button class="btn btn-black btn-lg py-3 btn-block" onclick="window.location='checkout.html'">Checkout</button>
+                        <div class="col-md-12 text-left">
+                          
+                          <button class="btn btn-black btn-lg py-3 btn-block" onclick="window.location='checkout.php'">Checkout</button>
                         </div>
                       </div>
                     </div>
@@ -250,6 +234,12 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 </script>
+<script>
+        function redirectToCheckout() {
+            // Redirect to checkout.html
+            window.location.href = 'checkout.php';
+        }
+    </script>
 	</body>
 
 </html>
