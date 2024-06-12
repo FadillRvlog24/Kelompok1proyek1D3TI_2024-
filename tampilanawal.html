@@ -488,6 +488,38 @@
 			</div>
 		</footer>
 		<!-- End Footer Section -->	
+		 
+		 <!-- Cookie Consent Banner -->
+		 <div id="cookie-consent-banner" style="display: none; position: fixed; bottom: 0; width: 100%; background: #000; color: #fff; padding: 15px; text-align: center;">
+			<p>We use cookies to ensure you get the best experience on our website. <a href="#" style="color: #4CAF50;">Learn more</a></p>
+			<form action="cookie_consent.php" method="POST" style="display: inline;">
+				<input type="hidden" name="accept_cookies" value="true">
+				<button type="submit" style="background: #4CAF50; color: #fff; border: none; padding: 10px 20px; cursor: pointer;">Accept</button>
+			</form>
+		</div>
+		<script>
+			// Check if the cookie is already set
+			function getCookie(name) {
+				let cookieArr = document.cookie.split(";");
+	
+				for (let i = 0; i < cookieArr.length; i++) {
+					let cookiePair = cookieArr[i].split("=");
+	
+					if (name == cookiePair[0].trim()) {
+						return decodeURIComponent(cookiePair[1]);
+					}
+				}
+	
+				return null;
+			}
+	
+			// Show the cookie consent banner if the cookie is not set
+			window.onload = function() {
+				if (!getCookie('cookie_consent')) {
+					document.getElementById('cookie-consent-banner').style.display = 'block';
+				}
+			};
+		</script>
 
 
 		<script src="bootstrap.bundle.min.js"></script>
