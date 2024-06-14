@@ -489,7 +489,78 @@
 
 			</div>
 		</footer>
-		<!-- End Footer Section -->	
+		<!-- End Footer Section -->
+		<style>
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgb(0,0,0);
+      background-color: rgba(0,0,0,0.4);
+      padding-top: 60px;
+    }
+    .modal-content {
+      background-color: #fefefe;
+      margin: 5% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+    }
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  </style>
+  		<?php include('session.php'); ?>
+		<div id="inactivityModal" class="modal">
+    <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <p>User tidak melakukan aktivitas terkini, apakah masih disana?</p>
+    <form method="post" action="session.php">
+      <button type="submit" name="cancel">Logout</button>
+    </form>
+  </div>
+</div>
+		<script>
+			
+  let inactivityTime = function () {
+    let time;
+    window.onload = resetTimer;
+    window.onmousemove = resetTimer;
+    window.onmousedown = resetTimer; // catches touchscreen presses
+    window.ontouchstart = resetTimer;
+    window.onclick = resetTimer;     // catches touchpad clicks
+    window.onkeypress = resetTimer;
+
+    function showModal() {
+      document.getElementById('inactivityModal').style.display = 'block';
+    }
+
+    function resetTimer() {
+      clearTimeout(time);
+      time = setTimeout(showModal, 30000);  // 30 seconds
+    }
+  };
+
+  inactivityTime();
+
+  function closeModal() {
+    document.getElementById('inactivityModal').style.display = 'none';
+  }
+</script>	
 
 
 		<script src="js/bootstrap.bundle.min.js"></script>
