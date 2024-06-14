@@ -76,6 +76,9 @@
                 echo "<p class='card-text'>No Telepon: " . $row["no_telepon"] . "</p>";
                 echo "<p class='card-text'>Total Pembayaran: Rp. " . $row["total_pembayaran"] . "</p>";
                 echo "<p class='card-text'>Metode Pembayaran: " . $row["metode_pembayaran"] . "</p>";
+                if (!empty($row["bukti_transfer"])) {
+                    echo "<p class='card-text'>Bukti Transfer: <a href='" . $row["bukti_transfer"] . "' target='_blank'>Lihat Bukti</a></p>";
+                }
                 echo "</div></div>";
             }
         } else {
