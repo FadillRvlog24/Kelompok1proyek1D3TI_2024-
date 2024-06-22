@@ -1,0 +1,37 @@
+/* General styling */
+body {
+    font-family: sans-serif;
+    margin: 0; /* Remove default margin */
+  }
+  
+  /* Container styling */
+  .container {
+    width: 800px; /* Set a fixed width for the container */
+    margin: 50px auto; /* Center the container horizontally with margins */
+    padding: 20px; /* Add some padding inside the container */
+    border: 1px solid #ddd; /* Add a thin border */
+    border-radius: 5px; /* Add rounded corners */
+  }
+  
+  /* Table styling */
+  table {
+    width: 100%; /* Make the table fill the container width */
+    border-collapse: collapse; /* Remove default table spacing */
+  }
+  
+  th, td {
+    text-align: left; /* Align table content to the left */
+    padding: 10px; /* Add padding to table cells */
+    border: 1px solid #ddd; /* Add borders to table cells */
+  }
+  
+  th {
+    background-color: #f2f2f2; /* Add a light gray background to table headers */
+    font-weight: bold; /* Make table headers bolder */
+  }
+  
+  /* Optional styling for zebra striping (alternating row colors) */
+  tr:nth-child(even) {
+    background-color: #fbfbfb; /* Add a light background color to even rows */
+  }
+  
