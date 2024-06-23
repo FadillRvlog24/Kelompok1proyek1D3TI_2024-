@@ -55,12 +55,12 @@
     <div class="div-2">
       <div class="div-3">
         <div class="column">
-          <img src="Green Salad with Tangy Basil Vinaigrette.jpeg" alt="" width="200">
+          <img src="smoothies melon.jpeg" alt="" width="300">
         </div>
         <div class="column-2">
           <div class="div-4">
-            <div class="div-5">Salad sayur</div>
-            <div class="div-6">Rp.10.000</div>
+            <div class="div-5">smoothies melon</div>
+            <div class="div-6">Rp.13.000</div>
             <div class="div-7">
               <?php
                 // Database connection
@@ -70,7 +70,7 @@
                 }
 
                 // Fetch product stock
-                $sql = "SELECT quantity FROM products WHERE name='Salad sayur'";
+                $sql = "SELECT quantity FROM products WHERE name='smoothies melon'";
                 $result = $conn->query($sql);
 
                 if ($result->num_rows > 0) {
@@ -86,8 +86,8 @@
             </div>
             <div class="div-8">
               <form action="add_to_cart.php" method="post">
-                <input type="hidden" name="product_name" value="Salad sayur">
-                <input type="hidden" name="price" value="10000">
+                <input type="hidden" name="product_name" value="smoothiesmelon">
+                <input type="hidden" name="price" value="13000">
                 <input type="hidden" name="quantity" value="1">
                 <button type="submit" class="div-9">Tambahkan ke keranjang</button>
               </form>

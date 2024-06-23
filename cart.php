@@ -43,9 +43,9 @@ $result = $conn->query($sql);
             </button>
             <div class="collapse navbar-collapse" id="navbarsFurni">
                 <ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
-                    <li class="nav-link" href="beranda.html">Beranda</a>
+                    <li class="nav-link" href="beranda.php">Beranda</a>
                   </li>
-                    <li><a class="nav-link" href="menu.html">Menu</a></li>
+                    <li><a class="nav-link" href="menu.php">Menu</a></li>
                     <li><a class="nav-link" href="about.html">Tentang kami</a></li>
                     <li><a class="nav-link" href="promotion.html">Promosi</a></li>
                     <li><a class="nav-link" href="location.html">Lokasi</a></li>
@@ -54,7 +54,7 @@ $result = $conn->query($sql);
                 <ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
                     <li><a class="nav-link" href="chat.html"><img src="icons8-message-30.png"></a></li>
                     <li><a class="nav-link" href="cart.php"><img src="icons8-cart-24 (1).png"></a></li>
-                    <li><a class="nav-link" href="profile.html"><img src="icons8-user-30.png"></a></li>
+                    <li><a class="nav-link" href="profile.php"><img src="icons8-user-30.png"></a></li>
                 </ul>
             </div>
         </div>

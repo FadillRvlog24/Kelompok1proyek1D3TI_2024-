@@ -35,7 +35,7 @@
           <li class="nav-item ">
             <a class="nav-link" href="beranda.php">Beranda</a>
           </li>
-          <li class="active"><a class="nav-link" href="menu4.html">Menu</a></li>
+          <li class="active"><a class="nav-link" href="menu.php">Menu</a></li>
           <li><a class="nav-link" href="about.html">Tentang kami</a></li>
           <li><a class="nav-link" href="promotion.html">Promosi</a></li>
           <li><a class="nav-link" href="location.html">Lokasi</a></li>
